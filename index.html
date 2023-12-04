@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextdoor</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Communities</h1>
+        <ul>
+            <li v-for="community in communities" :key="community.id">
+                <a :href="'/community/' + community.id">{{ community.name }}</a>
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
